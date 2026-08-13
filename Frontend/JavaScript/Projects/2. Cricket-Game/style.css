@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, sans-serif;
+
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+/* Game Title */
+h1 {
+  font-size: 42px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Container */
+div {
+  display: flex;
+  gap: 20px;
+
+  padding: 35px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+
+  backdrop-filter: blur(15px);
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+/* Buttons */
+button {
+  width: 130px;
+  height: 60px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: #ffffff;
+  color: #0f172a;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Hover Effect */
+button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Click Effect */
+button:active {
+  transform: translateY(-1px) scale(0.97);
+}
+
+/* Individual Buttons */
+button:nth-child(1) {
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  color: white;
+}
+
+button:nth-child(2) {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+}
+
+button:nth-child(3) {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  div {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  button {
+    width: 180px;
+  }
+}
