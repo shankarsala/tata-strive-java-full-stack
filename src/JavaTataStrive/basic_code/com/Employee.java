@@ -2,7 +2,7 @@ package JavaTataStrive.basic_code.com;
 
 //child class
 public class Employee extends  Student {
-    Employee(){
+    public Employee(){
         System.out.println("Employee Constructor.........!!");
 
     }

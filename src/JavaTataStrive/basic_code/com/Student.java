@@ -3,7 +3,7 @@ package JavaTataStrive.basic_code.com;
 //parent class
 public class Student {
     //default constructor
-    Student()
+    public Student()
     {
         System.out.println("Student Constructor.....!!!");
     }

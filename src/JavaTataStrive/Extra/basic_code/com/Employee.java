@@ -4,6 +4,7 @@ import JavaTataStrive.basic_code.com.Student;
 
 public class Employee extends Student {
     Employee(){
+        super();
         System.out.println("Employee Constructor....");
     }
     public void display(){
